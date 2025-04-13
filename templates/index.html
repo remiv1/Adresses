@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Document test</h1>
+        <form action="{{ url_for('external_routes.redirect_to_external') }}" method="get">
+            <input type="text" name="adresse" id="adresse" placeholder="Adresse" required>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+    <footer>
+        <p>Test document</p>
+    </footer>
+</body>
+</html>
